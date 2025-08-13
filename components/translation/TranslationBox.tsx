@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Copy, Volume2, Sparkles } from 'lucide-react';
 import LanguageSelector from './LanguageSelector';
 import { TranslationBoxProps } from '@/types';
+import Image from "next/image";
 
 const TranslationBox: React.FC<TranslationBoxProps> = ({ value, isTranslating, error, targetLanguage, onLanguageChange, languages }) => {
 	const [showToast, setShowToast] = useState(false);
@@ -91,7 +92,7 @@ const TranslationBox: React.FC<TranslationBoxProps> = ({ value, isTranslating, e
 					{isTranslating && (
 						<div className="absolute inset-0 flex items-center justify-center bg-gray-900/40 rounded-xl">
 							<div className="flex flex-col items-center space-y-2">
-								<img src="/Loading.gif" alt="Loading..." className="w-28 h-28" />
+								<Image src="/Loading.gif" alt="Loading..." width={96} height={96} />
 							</div>
 						</div>
 					)}
