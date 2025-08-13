@@ -15,7 +15,7 @@ const TranslationApp = () => {
 		<div className="min-h-screen bg-gradient-to-br from-gray-950 via-slate-900 to-gray-950 relative overflow-hidden">
 			<AnimatedBackground />
 			<div className="relative z-10 container mx-auto px-4 py-12">
-				<Header title="LinguaFlow" subtitle="Instant AI-powered translation across languages with neural precision" />
+				<Header title="Translator" subtitle="Instant AI-powered translation across languages with neural precision" />
 				<div className="max-w-7xl mx-auto">
 					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 						<InputBox value={inputText} onChange={setInputText} maxLength={200} sourceLanguage={sourceLanguage} onSourceLanguageChange={setSourceLanguage} languages={languages} />

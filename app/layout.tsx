@@ -5,7 +5,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'AI Translation',
+	title: 'Translator',
 	description: 'Instant AI-powered translation across languages with neural precision',
 	keywords: ['translation', 'AI', 'language', 'translate', 'multilingual'],
 	authors: [{ name: 'Nick Carvalho' }],
